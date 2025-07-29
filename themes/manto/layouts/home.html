@@ -1,3 +1,30 @@
-{{ define "main" }} {{ .Content }} {{ range site.RegularPages }}
-<h2 class="text-2xl"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ .Summary }} {{ end }} {{ end }}
+{{ define "main" }}
+<div class="bg-blue-50 p-6 rounded-lg mb-8">{{ .Content }}</div>
+
+<div class="space-y-6">
+  <h1 class="text-3xl font-bold text-gray-900 mb-6">Latest Posts</h1>
+
+  {{ range site.RegularPages }}
+  <article
+    class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+  >
+    <h2 class="text-2xl font-semibold text-gray-900 mb-3">
+      <a
+        href="{{ .RelPermalink }}"
+        class="text-blue-600 hover:text-blue-800 no-underline"
+        >{{ .LinkTitle }}</a
+      >
+    </h2>
+    <div class="text-gray-600 leading-relaxed">{{ .Summary }}</div>
+    <div class="mt-4">
+      <a
+        href="{{ .RelPermalink }}"
+        class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+      >
+        Read more →
+      </a>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

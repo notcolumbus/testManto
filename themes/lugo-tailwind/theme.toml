@@ -1,0 +1,12 @@
+name = "Lugo Tailwind"
+license = "MIT"
+licenselink = "https://github.com/yourusername/lugo-tailwind/blob/main/LICENSE"
+description = "A minimal, modern Hugo theme built with Tailwind CSS - fully customizable via config"
+homepage = "https://github.com/yourusername/lugo-tailwind"
+tags = ["minimal", "blog", "tailwind", "responsive", "configurable", "modern"]
+features = ["blog", "responsive", "customizable", "fast"]
+min_version = "0.146.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://github.com/yourusername"
