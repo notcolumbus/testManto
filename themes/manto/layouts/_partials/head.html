@@ -5,4 +5,10 @@
   site.Title }}{{ end }}
 </title>
 
-{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
+<!-- Using PostCSS build only -->
+{{ partialCached "head/css.html" . }}
+
+<!-- Tailwind CDN (disabled for testing PostCSS) -->
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+{{ partialCached "head/js.html" . }}
