@@ -1,3 +1,6 @@
-@import "node_modules/tailwindcss/base";
-@import "node_modules/tailwindcss/components";
-@import "node_modules/tailwindcss/utilities";
+@import "tailwindcss";
+
+/* Custom styles that work with Tailwind */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
